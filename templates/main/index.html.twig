@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Berryland!{% endblock %}
+
+{% block body %}
+<section class="text-light p-5 text-center text-sm-start banner bg-color">
+        <div >
+          <div class="banner-box">
+            <div class='box-1'>
+              <h1 class="banner-title">  Finland 🇫🇮 is a land of berries!  </h1>
+              <p class="lead my-4">
+            Learn about different kinds of berries
+              --Pick wild berries in the forest! 
+              </p>
+            </div>
+            <div class='box-2'>
+            <img class="hero-img"
+              src="https://cdn.pixabay.com/photo/2020/08/31/20/23/blueberries-5533520_960_720.jpg"
+              alt="" 
+            />
+            </div>
+          </div> 
+        </div>
+      </section>
+
+    <!-- Grid container -->
+    <div class="text-center pt-4 pb-4 pr-4 mt-5" style="background-color:#c5f3a0">
+        <!--Grid row-->
+        <div class="row" style="margin: 0 !important">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="padding-left: 0 !important">
+                <img src="https://cdn.pixabay.com/photo/2016/06/17/18/33/strawberries-1463795_960_720.jpg"
+                    alt="breakfast" width=80%/>
+                <!--Grid column-->
+            </div>
+
+            <!--Grid column-->
+            <div class="text-center col-lg-6 col-md-12" style="margin: auto 0;">
+                <h2 class="description-text p-3">Wild berries in Finland</h2>
+                <p class="description-text p-3">The best known and commercially most valuable berries are lingonberries, crowberries, bilberries, cloudberries, raspberries, cranberries and sea buckthorn.</p>
+                <button class="btn btn-primary btn-lg"><a href="{{ path('app_berries') }}" style="color: #fff">Get to know berries</a></button>
+                <!--Grid column-->
+            </div>
+        </div>
+        <!-- Grid container -->
+
+    </div>
+    <div class="mt-5 mb-5">
+        <h2 class="text-center">Where to pick wild berries</h2>
+        <ul class="row" style="margin: 0 auto; padding: 0 !important;">
+            {% for key, berry in berries %}
+            <!-- <li class="list-group-item text-center"> -->
+            <li class="meals-list text-center col-6 mt-5 mb-5">
+                <h3>{{key}}</h3>
+                <p>{{berry}}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="text-center">
+    <h2 class="text-center">When to pick wild berries</h2>
+        <img src="https://www.arktisetaromit.fi/binary/file/-/fid/4660"
+            alt="timetable"  class="timetable-image" />
+    </div>
+
+    <div class="slogan-container text-center p-5 mt-5">
+        <h2 class="mb-5">Summer is short, let's go berry picking!</h2>
+        <button class="btn btn-primary btn-lg"><a href="{{ path('app_contact')}}" style="color: #fff">Get in touch</a></button>
+    </div>
+
+</div>
+{% endblock %}

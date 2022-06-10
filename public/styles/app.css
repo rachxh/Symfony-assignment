@@ -1,0 +1,188 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Spartan:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  height: 100%;
+  min-width: 100vh;
+  background-color: #f8f8f8;
+}
+.logo {
+  font-family: "Oleo Script Swash Caps", cursive !important;
+  font-size: 1.5rem !important;
+  color: #8080f0!important;
+ 
+}
+
+header {
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  min-height: 10vh !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.banner-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-1{
+  margin: 0 2rem;
+}
+.title {
+  font-size: 60px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.title-about {
+  font-size: 60px;
+}
+
+.timetable-image {
+  object-fit: cover;
+}
+
+.description-text {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.meals-list {
+  list-style: none;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.slogan-container {
+  /* background-color: rgb(243, 190, 90); */
+  background-color: #ffe0a0;
+}
+
+.slogan-container > h1 {
+  margin: 0 auto;
+  width: 800px;
+}
+
+main {
+  min-height: 90vh;
+  background-image: url();
+}
+
+.form-container {
+  width: 45%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+.contact {
+  color: white;
+  text-align: center;
+  background-color: #73a02c;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #db323c!important;
+  border: none;
+}
+.hero-banner{
+  min-height: 70vh;
+
+}
+.hero-img{
+width: 80%;
+margin-left: 2rem;
+
+}
+.bg-color{
+  background-color:	#8080f0 !important;
+
+}
+
+.contact-banner{
+  margin: 0 auto;
+  width: 50%;
+}
+.contact-img{
+
+  max-width: 50vw;
+
+}
+/* ...berry page.... */
+.title-color{
+  color: #8080f0 !important;
+}
+
+.berry-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  width: 80%;
+  margin: 4rem auto;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: dense;
+}
+
+.berry-card {
+  position: relative;
+  width: 300px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-img{
+  width: 300px;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.berry-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.berry-card:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.berry-card img:hover {
+  filter: saturate(1.5);
+}
+
+.card-name {
+  /* height: 10%;
+  width: 100%;
+  text-align: center;
+  background-color: #9fc131;
+  color: aliceblue;
+  justify-content: center;
+  padding: 0.8rem 0;
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin: 0; */
+  color:#8080f0;
+
+}
+.card-text{
+  height: 80px;
+  padding-left: 0.5rem;
+  font-size: 0.8rem !important;
+}
